@@ -43,7 +43,7 @@ document.getElementById('startgame').addEventListener('click', () => {
         if (localStorage.getItem("users") == null) {
             localStorage.setItem("users", counter)
             var highscore = localStorage.getItem("users")
-            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore
+            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore-1
         } else if (counter > localStorage.getItem("users")) {
             localStorage.setItem("users", counter)
             var highscore = localStorage.getItem("users")
