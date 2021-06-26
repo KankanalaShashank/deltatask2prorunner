@@ -32,13 +32,13 @@ document.getElementById('startgame').addEventListener('click', () => {
     })
     var counter = 0
     var uniqueid = setInterval(function() {
-        document.getElementById("yourscore").innerText = "YOUR score :" + counter
+        document.getElementById("yourscore").innerText = "YOUR SCORE :" + counter
         counter += 1
     }, 3000)
-    document.getElementById("yourscore").innerText = "YOUR SCORE :" + counter
+   
 
     function storagesectionandsiplay() {
-
+        clearInterval(uniqueid)
 
         if (localStorage.getItem("users") == null) {
             localStorage.setItem("users", counter)
@@ -56,7 +56,7 @@ document.getElementById('startgame').addEventListener('click', () => {
         }
 
 
-        clearInterval(uniqueid)
+        
 
 
     }
