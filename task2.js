@@ -39,7 +39,7 @@ document.getElementById('startgame').addEventListener('click', () => {
 
     function storagesectionandsiplay() {
         clearInterval(uniqueid)
-        counter-=1
+       
 
         if (localStorage.getItem("users") == null) {
             localStorage.setItem("users", counter)
