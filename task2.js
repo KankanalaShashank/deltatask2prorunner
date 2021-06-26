@@ -18,7 +18,7 @@ document.getElementById('startgame').addEventListener('click', () => {
     cvx.fillRect(200, 110, 30, 30)
     console.log("ascac")
 
-    document.getElementById("mycanvas").addEventListener("click", function(event) {
+    addEventListener("click", function(event) {
         cvx.clearRect(200, y, 30, 30)
         cvx.fillStyle = "pink"
         if (y == 110) {
