@@ -39,15 +39,16 @@ document.getElementById('startgame').addEventListener('click', () => {
 
     function storagesectionandsiplay() {
         clearInterval(uniqueid)
+        counter-=1
 
         if (localStorage.getItem("users") == null) {
             localStorage.setItem("users", counter)
             var highscore = localStorage.getItem("users")
-            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore-1
+            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore
         } else if (counter > localStorage.getItem("users")) {
             localStorage.setItem("users", counter)
             var highscore = localStorage.getItem("users")
-            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore-1
+            document.getElementById("highscore").innerText = "BEST SCORE :" + highscore
 
         } else {
             var highscore = localStorage.getItem("users")
